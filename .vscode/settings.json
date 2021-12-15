@@ -13,6 +13,20 @@
             "driver": "PostgreSQL",
             "name": "heroku",
             "connectString": "postgres://afgfxbyrtezfvm:fa64410f4fd54157d17b1e60a265ff0ff43d5804504076092751a17afc503f0b@ec2-184-73-25-2.compute-1.amazonaws.com:5432/d8h1206lsaoinl"
+        },
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": false
+                }
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "Heroku",
+            "connectString": "postgres://muihquldngaicu:0ee969d7d1da9444f0fab2335d41f4d6de4936ece0b11e741de3144d9f69ef0a@ec2-34-193-235-32.compute-1.amazonaws.com:5432/da8u2fhvirenud"
         }
     ]
 }

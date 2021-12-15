@@ -34,13 +34,13 @@ app.get('/admin',(req,res)=>{
 })
 
 //rota responsável por salvar notícia
-app.post('/admin/salvar-noticia'), async (req,res) => {
+app.post('/admin/salvar-noticia', async (req,res) => {
     let {titulo, conteudo} = req.body
 
     await db.query('INSERT INTO noticias (titulo,conteudo) VALUES($1,$2)', [titulo, conteudo], (err, result) => {
         res.redirect('/noticias')
     })
-}
+})
 
 app.post('/admin/autenticar', (req,res) => {
     const{usuario,senha} = req.body
